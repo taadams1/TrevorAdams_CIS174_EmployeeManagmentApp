@@ -1,0 +1,15 @@
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\obj\Debug\EmployeeManager.Shared.csprojAssemblyReference.cache
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\obj\Debug\EmployeeManager.Shared.csproj.CoreCompileInputs.cache
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EmployeeManager.Shared.dll.config
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EmployeeManager.Shared.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EmployeeManager.Shared.pdb
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EmployeeManager.Domain.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EntityFramework.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EmployeeManager.Domain.pdb
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EmployeeManager.Domain.dll.config
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EntityFramework.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\obj\Debug\EmployeeManager.Shared.csproj.CopyComplete
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\obj\Debug\EmployeeManager.Shared.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Shared\obj\Debug\EmployeeManager.Shared.pdb

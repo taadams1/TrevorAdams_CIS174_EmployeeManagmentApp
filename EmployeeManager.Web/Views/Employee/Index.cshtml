@@ -1,0 +1,125 @@
+﻿@model EmployeeManager.Web.Models.CreateEmployeeModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Employee</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Create Employee</h1>
+        <form>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.FirstName)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.FirstName)
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Department)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.Department)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.MiddleName)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.MiddleName)
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.JobTitle)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.JobTitle)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.LastName)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.LastName)
+                </div>
+                <div class="col-md-2 ">
+                    @Html.LabelFor(model => model.Salary)
+                </div>
+                <div class="col-md-2">
+                    @Html.EditorFor(model => model.Salary, new
+               {
+                   htmlAttributes = new
+                   {
+                       @Min = "0",
+                       @Step = "1",
+                       @Value = "0.00",
+                       @Type = "Number"
+                   }
+               })
+                </div>
+                <div class="col-md-2">
+                    @Html.EnumDropDownListFor(model => model.SalaryType)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.BirthDate)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.BirthDate)
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.EmployeeID)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.EmployeeID, new
+                   {
+                       htmlAttributes = new
+                       {
+                           
+                           @Placeholder = "Leave ID Blank"
+                       }
+                   })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.HireDate)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.HireDate)
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.AvailableHours)
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.AvailableHours)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit" onclick="clearAll()">Create</button>
+                    <button id="clear" class="btn btn-outline-dark">Clear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/bootstrap.bundle.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {(
+        $(".date-picker").datepicker({
+            dateFormat: 'dd/mm/yy'
+        })
+    )})
+    
+</script>

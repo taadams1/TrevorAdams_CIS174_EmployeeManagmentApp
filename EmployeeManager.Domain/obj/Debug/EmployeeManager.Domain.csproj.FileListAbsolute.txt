@@ -1,0 +1,14 @@
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EmployeeManager.Domain.dll.config
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EmployeeManager.Domain.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EmployeeManager.Domain.pdb
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EntityFramework.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EntityFramework.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.csprojAssemblyReference.cache
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.csproj.CopyComplete
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.pdb
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.Migrations.InitialMigration.resources
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Domain\obj\Debug\EmployeeManager.Domain.csproj.GenerateResource.cache

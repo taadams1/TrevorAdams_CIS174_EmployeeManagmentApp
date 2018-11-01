@@ -1,0 +1,70 @@
+﻿@model EmployeeManager.Web.Models.EmployeeDisplayModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View All Employees</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>All Employees</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>First Name</th>
+                        <th>Middle Initial</th>
+                        <th>Last Name</th>
+                        <th>Hire Date</th>
+                        <th>Salary</th>
+                        <th>Salary Type</th>
+                        <th>Job Title</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var employee in Model.Employees)
+                    {
+                    <tr>
+                        <td>
+                            @employee.EmployeeIDString
+                        </td>
+                        <td>
+                            @employee.FirstName
+                        </td>
+                        <td>
+                            @employee.MiddleName[0]
+                        </td>
+                        <td>
+                            @employee.LastName
+                        </td>
+                        <td>
+                            @employee.HireDate
+                        </td>
+                        <td>
+                            @employee.Salary
+                        </td>
+                        <td>
+                            @employee.SalaryTypeString
+                        </td>
+                        <td>
+                            @employee.JobTitle
+                        </td>
+                        <td>
+                            @employee.Department
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/bootstrap.bundle.min.js"></script>
