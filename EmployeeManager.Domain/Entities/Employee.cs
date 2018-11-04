@@ -23,7 +23,7 @@ namespace EmployeeManager.Domain.Entities
         public string JobTitle { get; set; }
         public decimal Salary { get; set; }
         public SalaryEnum SalaryType { get; set; }
-        public Guid EmployeeID { get; set; }
+        public Guid EmployeeId { get; set; }
         public string AvailableHours { get; set; }
 
     }

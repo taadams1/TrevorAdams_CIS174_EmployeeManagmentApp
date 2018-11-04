@@ -1,19 +1,21 @@
-﻿using EmployeeManager.Shared.Orchestrators;
+﻿using EmployeeManager.Shared.Orchestrators.Interfaces;
 using EmployeeManager.Shared.ViewModels;
 using EmployeeManager.Web.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace EmployeeManager.Web.Controllers
 {
     public class EmployeeController : Controller
     {
-        private EmployeeOrchestrator _employeeOrchestrator = new EmployeeOrchestrator();
-        
+        private readonly IEmployeeOrchestrator _employeeOrchestrator;
+
+        public EmployeeController(IEmployeeOrchestrator employeeOrchestrator)
+        {
+            _employeeOrchestrator = employeeOrchestrator;
+        }
+
         public async Task<ActionResult> Index(CreateEmployeeModel employee)
         {
             if (string.IsNullOrWhiteSpace(employee.FirstName))
@@ -30,10 +32,10 @@ namespace EmployeeManager.Web.Controllers
                 JobTitle = employee.JobTitle,
                 Salary = employee.Salary,
                 SalaryType = employee.SalaryType,
-                EmployeeID = Guid.NewGuid(),
+                EmployeeId = Guid.NewGuid(),
                 AvailableHours = employee.AvailableHours
             });
-
+            ModelState.Clear(); //clear all fields on submit
             return View();
         }
         // GET: Employees
@@ -45,6 +47,41 @@ namespace EmployeeManager.Web.Controllers
             };
 
             return View(employeeDisplayModel);
+        }
+
+        public ActionResult Update()
+        {
+            return View();
+        }
+
+        public async Task<JsonResult> UpdateEmployee(UpdateEmployeeModel employee)
+        {
+            if (employee.EmployeeID == Guid.Empty)
+                return Json(false, JsonRequestBehavior.AllowGet);
+
+            var result = await _employeeOrchestrator.UpdateEmployee(new EmployeeViewModel
+            {
+                FirstName = employee.FirstName,
+                MiddleName = employee.MiddleName,
+                LastName = employee.LastName,
+                BirthDate = employee.BirthDate,
+                HireDate = employee.HireDate,
+                Department = employee.Department,
+                JobTitle = employee.JobTitle,
+                Salary = employee.Salary,
+                SalaryType = employee.SalaryType,
+                EmployeeId = Guid.NewGuid(),
+                AvailableHours = employee.AvailableHours
+            });
+
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<JsonResult> Search(string searchString)
+        {
+            var viewModel = await _employeeOrchestrator.SearchEmployee(searchString);
+
+            return Json(viewModel, JsonRequestBehavior.AllowGet);
         }
     }
 }

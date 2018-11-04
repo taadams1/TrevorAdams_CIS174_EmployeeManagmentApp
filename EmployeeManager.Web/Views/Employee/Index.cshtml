@@ -80,8 +80,8 @@
                    {
                        htmlAttributes = new
                        {
-                           
-                           @Placeholder = "Leave ID Blank"
+                           @Disabled = true,
+                           @Placeholder = "ID is generated automatically"
                        }
                    })
                 </div>
@@ -101,25 +101,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit" onclick="clearAll()">Create</button>
-                    <button id="clear" class="btn btn-outline-dark">Clear</button>
+                <div class="col-11">
+                    <button class="btn btn-primary float-right" type="submit">Create</button>
+                </div>
+                <div>
+                    <button id="clear" class="btn btn-outline-dark" onclick="clearAll()">Clear</button>
                 </div>
             </div>
         </form>
     </div>
 </body>
 </html>
-<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
-<script src="~/Scripts/jquery-3.0.0.min.js"></script>
-<script src="~/Scripts/bootstrap.bundle.min.js"></script>
-<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
-<script type="text/javascript">
-    $(function () {(
-        $(".date-picker").datepicker({
-            dateFormat: 'dd/mm/yy'
-        })
-    )})
-    
-</script>
+
+

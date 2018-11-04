@@ -23,6 +23,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="@Url.Action("Index", "Employee")">Create Employee</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Update", "Employee")">Update Employee</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -35,7 +38,21 @@
         </footer>
     </div>
 
-    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+
 </body>
+
 </html>
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+<script type="text/javascript">
+    $(function () {
+        (
+            $(".date-picker").datepicker({
+                dateFormat: 'dd/mm/yy'
+            })
+        )
+    })
+
+</script>

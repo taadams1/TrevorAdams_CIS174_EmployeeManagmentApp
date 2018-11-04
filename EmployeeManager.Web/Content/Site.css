@@ -21,3 +21,15 @@ textarea {
     width: 100%;
 }
 
+.margin-top-md {
+    margin-top: 10px;
+}
+
+.margin-left-md {
+    margin-left: 15px;
+}
+
+.hidden {
+    display: none;
+}
+

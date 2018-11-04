@@ -77,3 +77,12 @@ C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Enti
 C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\EmployeeManager.Domain.pdb
 C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\EmployeeManager.Domain.dll.config
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.Web.Common.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\WebActivatorEx.dll
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.Web.Common.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\trevr_000\source\repos\EmployeeManager.Web\EmployeeManager.Web\bin\Ninject.Web.Mvc.xml
