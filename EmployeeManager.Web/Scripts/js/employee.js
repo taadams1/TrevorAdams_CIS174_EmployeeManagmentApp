@@ -9,7 +9,12 @@
         $("#middleName").val(data.MiddleName);
         $("#lastName").val(data.LastName);
         $("#birthDate").val(data.BirthDateString);
-        $("#hireDate").val(data.HireDateString);
+        console.log(data.BirthDateString);
+        var jsDate = new Date(data.HireDateString);
+        var formattedDate = [jsDate.getMonth() + 1, jsDate.getDate(),jsDate.getFullYear()].join("/");
+        $("#hireDate").val(formattedDate);
+        console.log("jsDate: ", jsDate);
+        console.log("formattedDate: ", formattedDate);
         $("#department").val(data.Department);
         $("#jobTitle").val(data.JobTitle);
         $("#salary").val(data.Salary);
