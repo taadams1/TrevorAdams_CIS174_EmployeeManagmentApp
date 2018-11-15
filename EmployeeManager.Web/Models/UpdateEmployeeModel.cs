@@ -21,7 +21,7 @@ namespace EmployeeManager.Web.Models
         public SalaryEnum SalaryType { get; set; }
         public string SalaryTypeString => SalaryType.ToString();
         [DataType(DataType.Text)]
-        public Guid EmployeeID { get; set; }
+        public Guid EmployeeId { get; set; }
         public string AvailableHours { get; set; }
     }
 }

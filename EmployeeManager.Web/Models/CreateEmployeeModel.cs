@@ -30,7 +30,7 @@ namespace EmployeeManager.Web.Models
         public decimal Salary { get; set; }
         [Required(ErrorMessage = "Please enter salary type.")]
         public SalaryEnum SalaryType { get; set; }
-        public Guid EmployeeID { get; set; }
+        public Guid EmployeeId { get; set; }
         [Required(ErrorMessage = "Please enter available hours.")]
         public string AvailableHours { get; set; }
     }

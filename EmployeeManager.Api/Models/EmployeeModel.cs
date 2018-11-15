@@ -17,7 +17,7 @@ namespace EmployeeManager.Api.Models
         public string JobTitle { get; set; }
         public decimal Salary { get; set; }
         public SalaryEnum SalaryType { get; set; }
-        public string EmployeeID { get; set; }
+        public string EmployeeId { get; set; }
         public string AvailableHours { get; set; }
     }
 }

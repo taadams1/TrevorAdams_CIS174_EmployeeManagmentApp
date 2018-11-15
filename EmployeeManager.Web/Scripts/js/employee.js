@@ -4,19 +4,25 @@
     $.ajax({
         url: "Search",
         data: { searchString: search }
-    }).done(function (data) {
+    }).done(function(data) {
         $("#firstName").val(data.FirstName);
         $("#middleName").val(data.MiddleName);
         $("#lastName").val(data.LastName);
-        $("#birthDate").val(data.BirthDateString);
-        $("#hireDate").val(data.HireDateString);
+        var bd = new Date(parseInt(data.BirthDateString));
+        console.log(bd);
+        $("#birthDate").val(bd.toISOString().substr(0, 10));
+        console.log(data.BirthDateString);
+        var hd = new Date(parseInt(data.HireDateString));
+        console.log(hd);
+        $("#hireDate").val(hd.toISOString().substr(0, 10));
+        console.log(data.HireDateString);
         $("#department").val(data.Department);
         $("#jobTitle").val(data.JobTitle);
         $("#salary").val(data.Salary);
         $("#salaryType").val(data.SalaryTypeString);
         $("#employeeId").val(data.EmployeeId);
         $("#availableHours").val(data.AvailableHours);
-    })
+        });
 }
 
 function updateEmployee() {
@@ -59,4 +65,13 @@ function updateEmployee() {
                 .addClass("visible");
         }
     });
+}
+
+function unixToReadable(dateIn) {
+    var thisDate = new Date(parseInt(dateIn));
+    console.log("unix to readable function: ", thisDate);
+    //var formattedDate = (("0" + date.getDate()).slice(-2) + "/"
+    // + ("0" + (date.getMonth() + 1)).slice(-2) + "/"
+    // + date.getFullYear());
+    return thisDate.toISOString().substr(0, 10);
 }
