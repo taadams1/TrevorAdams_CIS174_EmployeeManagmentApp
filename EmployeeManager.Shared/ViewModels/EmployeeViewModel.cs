@@ -20,7 +20,7 @@ namespace EmployeeManager.Shared.ViewModels
         public SalaryEnum SalaryType { get; set; }
         public string SalaryTypeString => SalaryType.ToString();
         public Guid EmployeeId { get; set; }
-        public string EmployeeIDString => EmployeeId.ToString();
+        public string EmployeeIdString => EmployeeId.ToString();
         public string AvailableHours { get; set; }
     }
 }

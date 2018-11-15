@@ -56,7 +56,7 @@ namespace EmployeeManager.Web.Controllers
 
         public async Task<JsonResult> UpdateEmployee(UpdateEmployeeModel employee)
         {
-            if (employee.EmployeeID == Guid.Empty)
+            if (employee.EmployeeId == Guid.Empty)
                 return Json(false, JsonRequestBehavior.AllowGet);
 
             var result = await _employeeOrchestrator.UpdateEmployee(new EmployeeViewModel
